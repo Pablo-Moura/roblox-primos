@@ -44,13 +44,13 @@ local function webhook()
 		local data = {
 			["content"] = "",
 			["username"] = "Anime Adventures - "..game:GetService("Players").LocalPlayer.Name,
-			["avatar_url"] = "", --"https://tr.rbxcdn.com/e5b5844fb26df605986b94d87384f5fb/150/150/Image/Jpeg",
+			["avatar_url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. game.Players.LocalPlayer.userId .. "&width=420&height=420&format=png",
+			--"https://tr.rbxcdn.com/e5b5844fb26df605986b94d87384f5fb/150/150/Image/Jpeg",
 			["embeds"] = {
 				{
 					["author"] = {
 						["name"] = "Anime Adventures | Resultados: ✔",
-						["icon_url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. game.Players.LocalPlayer.userId .. "&width=420&height=420&format=png"
-						--"https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
 					},
 					["description"] = "Player: **||"..game:GetService("Players").LocalPlayer.DisplayName.."||** 🎮",
 					["color"] = 110335,
