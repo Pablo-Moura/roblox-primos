@@ -43,21 +43,23 @@ local function webhook()
 
 		local data = {
 			["content"] = "",
-			["username"] = "Anime Adventures",
-			["avatar_url"] = "https://tr.rbxcdn.com/e5b5844fb26df605986b94d87384f5fb/150/150/Image/Jpeg",
+			["username"] = "Anime Adventures - "..game:GetService("Players").LocalPlayer.Name,
+			["avatar_url"] = "", --"https://tr.rbxcdn.com/e5b5844fb26df605986b94d87384f5fb/150/150/Image/Jpeg",
 			["embeds"] = {
 				{
 					["author"] = {
-						["name"] = "Anime Adventures | Result ✔",
-						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+						["name"] = "Anime Adventures | Resultados: ✔",
+						["icon_url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. game.Players.LocalPlayer.userId .. "&width=420&height=420&format=png"
+						--"https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
 					},
-					["description"] = "🎮 **"..game:GetService("Players").LocalPlayer.Name.."** 🎮",
+					["description"] = "Player: **||"..game:GetService("Players").LocalPlayer.DisplayName.."||** 🎮",
 					["color"] = 110335,
 
+--[[
 					["thumbnail"] = {
 						['url'] = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. game.Players.LocalPlayer.userId .. "&width=420&height=420&format=png"
 					},
-
+]]--
 					["fields"] = {
 						{
 							["name"] = "Total Waves:",
@@ -65,23 +67,23 @@ local function webhook()
 								" <:wave:997136622363627530>",
 							["inline"] = true
 						}, {
-							["name"] = "Recieved Gems:",
+							["name"] = "Gemas Obtidas:",
 							["value"] = gems .. " <:gem:997123585476927558>",
 							["inline"] = true
 						}, {
-                            ["name"] = "Recieved XP:",
+                            ["name"] = "XP Obtido:",
                             ["value"] = XP .. " 🧪",
                             ["inline"] = true
                         }, {
-                            ["name"] = "Total Time:",
+                            ["name"] = "Duração da Partida:",
                             ["value"] = tostring(ttime[2]) .. " ⏳",
                             ["inline"] = true
                         }, {
-                            ["name"] = "Current Gems:",
+                            ["name"] = "Gemas Atuais:",
                             ["value"] = tostring(game.Players.LocalPlayer._stats.gem_amount.Value).." <:gem:997123585476927558>",
                             ["inline"] = true
                         }, {
-                            ["name"] = "Current Level:",
+                            ["name"] = "Level Atual:",
                             ["value"] = tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text).. " ✨",
                             ["inline"] = true
                         }
