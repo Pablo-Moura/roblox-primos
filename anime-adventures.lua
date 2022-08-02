@@ -402,15 +402,15 @@ function sex()
                 getgenv().leveldrop:Clear()
                 table.clear(levels)
                 getgenv().levels = {"marineford_infinite","marineford_level_1","marineford_level_2","marineford_level_3",
-                "marineford_level_4","marineford_level_5","marineford_level_6",}
+                "marineford_level_4","marineford_level_5","marineford_level_6"}
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
 			elseif world == "Ghoul City" then
                 getgenv().leveldrop:Clear()
                 table.clear(levels)
-                getgenv().levels = {"tokyo_ghoul_infinite","tokyo_ghoul_level_1","tokyo_ghoul_level_2","tokyo_ghoul_level_3",
-                "tokyo_ghoul_level_4","tokyo_ghoul_level_5","tokyo_ghoul_level_6",}
+                getgenv().levels = {"tokyoghoul_infinite","tokyoghoul_level_1","tokyoghoul_level_2","tokyoghoul_level_3",
+                "tokyoghoul_level_4","tokyoghoul_level_5","tokyoghoul_level_6"}
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
